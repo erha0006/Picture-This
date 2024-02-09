@@ -15,7 +15,56 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+
+    <picture class="landscape">
+      
+      <source srcset="images/r-museum-320_x_180.png,
+       images/r-museum-640_x_360.png 2x,
+       images/r-museum-960_x_540.png 3x"
+       media="(max-width: 960px)" />
+
+      <source srcset="images/r-museum-480_x_270.png,
+      images/r-museum-960_x_540.png 2x,
+      images/r-museum-1440_x_810.png 3x"
+      media="max-width: 960px" />
+
+      <source srcset="images/r-museum-720_x_405.png,
+      images/r-museum-1440_x_810.png 2x,
+      images/r-2160_x_810.png 3x"
+      media="max-width: 960px" />
+
+      <source srcset="images/r-museum-960_x_540.png,
+      images/r-museum-1920_x_1080.png 2x,
+      images/r-museum-2880_x_1621.png 3x"
+      media="max-width 960px">
+
+      <picture class="sqaure">
+
+        <source srcset="images/r-museum-320_x_180.png,
+        images/r-museum-640_x_360.png 2x,
+        images/r-museum-960_x_540.png 3x"
+        media="(min-width: 960px)" />
+  
+       <source srcset="images/r-museum-480_x_270.png,
+       images/r-museum-960_x_540.png 2x,
+       images/r-museum-1440_x_810.png 3x"
+       media="min-width: 960px" />
+  
+       <source srcset="images/r-museum-720_x_405.png,
+       images/r-museum-1440_x_810.png 2x,
+       images/r-2160_x_810.png 3x"
+       media="min-width: 960px" />
+  
+       <source srcset="images/r-museum-960_x_540.png,
+       images/r-museum-1920_x_1080.png 2x,
+       images/r-museum-2880_x_1621.png 3x"
+       media="min-width 960px">
+      </picture>
+       
+      
+      <img src="images/museum.jpg" alt="placeholder" media="max-width: 960px"  height="100%" width="100%">
+    </picture>
+
 
   </header>
 </body>
